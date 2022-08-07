@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de Tabelas</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.3em;
+            }
+            :root{
+                --tit: #d5f6d8;
+                --colaz: #d5f6f8;
+                --colrs: #f5d6d8;
+                --colam: #f9fbd4;
+            }
+            table{
+                width: 480px;
+                border-collapse: collapse;
+            }
+            caption{
+                background-color: #f5f6d8;
+                font-weight: 600;
+            }
+            th, td, caption{
+                border: 1px solid #95a2a8;
+                padding: 10px 0px;
+            }
+            td{
+                text-align: center;
+            }
+            .t{
+                background-color: var(--tit);
+            }
+            .cnome{
+                background-color: var(--colaz);
+            }
+            .cgrupo{
+                background-color: var(--colrs);
+            }
+            .cprof{
+                background-color: var(--colam);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício de Tabelas</h1>
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrupo" span="2">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr class="t">
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Mara</td>
+                <td>F</td>
+                <td>24</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Leda</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Dentista</td>
+            </tr>
+            <tr>
+                <td>Jair</td>
+                <td>M</td>
+                <td>34</td>
+                <td>Vendedor</td>
+            </tr>
+        </table>
+    </body>
+</html>
